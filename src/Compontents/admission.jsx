@@ -66,16 +66,16 @@ export default class addmission extends Component {
   }
   render() {
     return (
-      <div className={admission.combined-wrapper}>
-        <div className="combined-reload">
+      <div className={admission['combined-wrapper']}>
+        <div className={admission['combined-reload']}>
           <Button shape="circle" onClick={this.onClick} >
             <PlayCircleOutlined />
           </Button>
         </div>
         {this.state.show && (
-          <div className="combined">
-            <div className="combined-shape">
-              <div className="shape-left">
+          <div className={admission["combined"]}>
+            <div className={admission["combined-shape"]}>
+              <div className={admission["shape-left"]}>
                 <TweenOne
                   animation={[
                     { x: 158, type: 'from', ease: 'easeInOutQuint', duration: 600 },
@@ -83,7 +83,7 @@ export default class addmission extends Component {
                   ]}
                 />
               </div>
-              <div className="shape-right">
+              <div className={admission["shape-right"]}>
                 <TweenOne
                   animation={[
                     { x: -158, type: 'from', ease: 'easeInOutQuint', duration: 600 },
@@ -93,7 +93,7 @@ export default class addmission extends Component {
               </div>
             </div>
             <Texty
-              className="title"
+              className={admission["title"]}
               type="mask-top"
               delay={400}
               enter={this.getEnter}
@@ -122,11 +122,11 @@ export default class addmission extends Component {
               White Blog
             </Texty>
             <TweenOne
-              className="combined-bar"
+              className={admission["combined-bar"]}
               animation={{ delay: 2000, width: 0, x: 158, type: 'from', ease: 'easeInOutExpo' }}
             />
             <Texty
-              className="content"
+              className={admission["content"]}
               type="bottom"
               split={this.getSplit}
               delay={2200}
